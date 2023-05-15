@@ -23,7 +23,7 @@ def third_func(**player):
 
 third_func(first = "Jaime", second = "Saheed", third = "Uche")
 
-#For fun!
+#----------------For fun!-------------------
 def fourth_func(**player): 
     for key, value in player.items():
         print(key + ": " + value.strip(), end=", ")
@@ -39,3 +39,16 @@ def fifth_func(**player):
     print(", ".join(output))
 
 fifth_func(first="Jaime", second="Saheed", third="Uche")
+
+# Passing a list as an arg
+def my_function(food):
+#   for x in food:
+#     print(x)
+#     for i in x:
+#        print(i)
+    for key, value in food.items():
+      print(key, value)
+
+foods = {"fruits": ["apple", "banana", "cherry"],
+"vegetables": ["spinach", "onion", "broccoli"]}
+my_function(foods)

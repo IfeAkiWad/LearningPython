@@ -10,3 +10,9 @@ def another_function(fruit):
     print("I love " + fruit)
 
 another_function("oranges")
+
+# Arbitrary functions (*args)
+def third_function(*kids):
+    print("The youngest is " + kids[-1])
+
+third_function("Ife", "Toyin", "Toyo", "Tito")

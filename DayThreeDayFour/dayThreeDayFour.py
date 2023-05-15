@@ -22,3 +22,20 @@ def third_func(**player):
     print("first place: " + player["first"] + ", second place: " + player["second"] + ", and third place: " + player["third"])
 
 third_func(first = "Jaime", second = "Saheed", third = "Uche")
+
+#For fun!
+def fourth_func(**player): 
+    for key, value in player.items():
+        print(key + ": " + value.strip(), end=", ")
+    print()
+
+fourth_func(first="Jaime", second="Saheed", third="Uche")
+
+#Revised w/o the unnecessary comma at the end
+def fifth_func(**player):
+    output = []
+    for key, value in player.items():
+        output.append(key + ": " + value.strip())
+    print(", ".join(output))
+
+fifth_func(first="Jaime", second="Saheed", third="Uche")

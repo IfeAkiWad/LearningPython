@@ -1,0 +1,3 @@
+import dateModule
+
+dateModule.theDate()

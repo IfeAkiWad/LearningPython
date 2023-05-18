@@ -12,5 +12,5 @@ class Student(Person):
     self.graduationyear = 2019
 
 x = Student("Mike", "Olsen")
-print(x.firstname + " " + x.lastname)
-print("Gradution Year: " + str(x.graduationyear))
+print(x.firstname, x.lastname)
+print("Gradution Year:", str(x.graduationyear))
